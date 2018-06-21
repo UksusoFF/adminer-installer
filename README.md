@@ -1,0 +1,1 @@
+```git clone https://github.com/UksusoFF/adminer-installer.git adminer && ./adminer/run.sh```
