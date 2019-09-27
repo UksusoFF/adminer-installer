@@ -1,6 +1,6 @@
 Quick installer for latest [Adminer](https://www.adminer.org/) with [Nette](https://www.adminer.org/static/designs/nette/screenshot.png) theme and dump-date plugin.
 
-== Install ==
+## Install
 
 Default theme:
 
