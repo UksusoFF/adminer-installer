@@ -1,0 +1,110 @@
+$accent-normal: #4f8cc9;
+$dark-normal: #222;
+$dark-other: #333;
+$light-normal: #bebebe;
+$light-other: #5f5f5f;
+
+body,
+#menu,
+#breadcrumb,
+#content {
+    color: $light-normal !important;
+    background-color: $dark-normal !important;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        color: $light-normal !important;
+    }
+
+    a {
+        color: $accent-normal !important;
+    }
+
+    select,
+    textarea,
+    input:not(#logout) {
+        border: none;
+        background: none !important;
+        background-color: $light-other !important;
+        color: $light-normal !important;
+    }
+
+    table {
+        thead {
+            tr {
+                th, td {
+                    background-color: $dark-other !important;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                th, td {
+                    background-color: $dark-normal !important;
+                }
+
+                &.odd {
+                    th, td {
+                        background-color: $dark-other !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#lang {
+    background: inherit !important;
+}
+
+#content {
+    .footer {
+        position: inherit !important;
+        margin: 0 !important;
+        border: none !important;
+
+        & > div {
+            background: none !important;
+            padding: 0 !important;
+        }
+
+        input[type="submit"] {
+            background: none !important;
+            border: none !important;
+            font-size: inherit !important;
+            padding: 5px !important;
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    filter: invert(100%);
+}
+
+::-webkit-scrollbar-button {
+    filter: invert(100%);
+}
+
+::-webkit-scrollbar-track {
+    filter: invert(100%);
+}
+
+::-webkit-scrollbar-track-piece {
+    filter: invert(100%);
+}
+
+::-webkit-scrollbar-thumb {
+    filter: invert(100%);
+}
+
+::-webkit-scrollbar-corner {
+    filter: invert(100%);
+}
+
+::-webkit-resizer {
+    filter: invert(100%);
+}

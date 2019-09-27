@@ -1,0 +1,127 @@
+body,
+#menu,
+#breadcrumb,
+#content {
+  color: #bebebe !important;
+  background-color: #222 !important;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+#menu h1,
+#menu h2,
+#menu h3,
+#menu h4,
+#menu h5,
+#breadcrumb h1,
+#breadcrumb h2,
+#breadcrumb h3,
+#breadcrumb h4,
+#breadcrumb h5,
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5 {
+  color: #bebebe !important;
+}
+body a,
+#menu a,
+#breadcrumb a,
+#content a {
+  color: #4f8cc9 !important;
+}
+body select,
+body textarea,
+body input:not(#logout),
+#menu select,
+#menu textarea,
+#menu input:not(#logout),
+#breadcrumb select,
+#breadcrumb textarea,
+#breadcrumb input:not(#logout),
+#content select,
+#content textarea,
+#content input:not(#logout) {
+  border: none;
+  background: none !important;
+  background-color: #5f5f5f !important;
+  color: #bebebe !important;
+}
+body table thead tr th, body table thead tr td,
+#menu table thead tr th,
+#menu table thead tr td,
+#breadcrumb table thead tr th,
+#breadcrumb table thead tr td,
+#content table thead tr th,
+#content table thead tr td {
+  background-color: #333 !important;
+}
+body table tbody tr th, body table tbody tr td,
+#menu table tbody tr th,
+#menu table tbody tr td,
+#breadcrumb table tbody tr th,
+#breadcrumb table tbody tr td,
+#content table tbody tr th,
+#content table tbody tr td {
+  background-color: #222 !important;
+}
+body table tbody tr.odd th, body table tbody tr.odd td,
+#menu table tbody tr.odd th,
+#menu table tbody tr.odd td,
+#breadcrumb table tbody tr.odd th,
+#breadcrumb table tbody tr.odd td,
+#content table tbody tr.odd th,
+#content table tbody tr.odd td {
+  background-color: #333 !important;
+}
+
+#lang {
+  background: inherit !important;
+}
+
+#content .footer {
+  position: inherit !important;
+  margin: 0 !important;
+  border: none !important;
+}
+#content .footer > div {
+  background: none !important;
+  padding: 0 !important;
+}
+#content .footer input[type=submit] {
+  background: none !important;
+  border: none !important;
+  font-size: inherit !important;
+  padding: 5px !important;
+}
+
+::-webkit-scrollbar {
+  filter: invert(100%);
+}
+
+::-webkit-scrollbar-button {
+  filter: invert(100%);
+}
+
+::-webkit-scrollbar-track {
+  filter: invert(100%);
+}
+
+::-webkit-scrollbar-track-piece {
+  filter: invert(100%);
+}
+
+::-webkit-scrollbar-thumb {
+  filter: invert(100%);
+}
+
+::-webkit-scrollbar-corner {
+  filter: invert(100%);
+}
+
+::-webkit-resizer {
+  filter: invert(100%);
+}
