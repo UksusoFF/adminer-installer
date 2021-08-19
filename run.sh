@@ -3,14 +3,15 @@
 set -e
 
 SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
+PLUGIN_DIR="${SCRIPT_DIR}/plugins"
 THEME=$1
 
-cd "${SCRIPT_DIR}"
+mkdir -p "${PLUGIN_DIR}"
 
-wget https://www.adminer.org/latest.php -O adminer.php
-wget https://raw.githubusercontent.com/vrana/adminer/master/designs/nette/adminer.css -O adminer.css
-wget https://raw.github.com/vrana/adminer/master/plugins/plugin.php -P plugins
-wget https://raw.github.com/vrana/adminer/master/plugins/dump-date.php -P plugins
+curl https://www.adminer.org/latest.php > "${SCRIPT_DIR}/adminer.php"
+curl https://raw.githubusercontent.com/vrana/adminer/master/designs/nette/adminer.css > "${SCRIPT_DIR}/adminer.css"
+curl https://raw.github.com/vrana/adminer/master/plugins/plugin.php > "${PLUGIN_DIR}/plugin.php"
+curl https://raw.github.com/vrana/adminer/master/plugins/dump-date.php > "${PLUGIN_DIR}/dump-date.php"
 
 if [ "$THEME" == "dark" ]; then
   cat "adminer-dark.css" >> "adminer.css"
